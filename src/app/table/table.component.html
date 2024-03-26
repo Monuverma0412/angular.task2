@@ -1,0 +1,15 @@
+<table>
+      <tr>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let user of users; let i = index">
+        <td>{{ user.email }}</td>
+        <td>{{ user.password }}</td>
+        <td>
+          <button (click)="deleteData(i)">Delete</button>
+        </td>
+      </tr>
+  </table>
+  

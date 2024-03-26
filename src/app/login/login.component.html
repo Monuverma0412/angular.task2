@@ -1,0 +1,19 @@
+    <form>
+      <div class="demo1">
+        <div>
+          <label>Email:</label>
+          <input #first type="text" placeholder="email" id="email"><br><br>
+          <span class="exist" *ngIf="!nameExist">Email is required</span>
+        </div>
+  
+        <div>
+          <label>Password:</label>
+          <input  #second type="password" placeholder="password" id="password"><br><br>
+          <span class="exist" *ngIf="!passwordExist">Password is required</span>
+        </div>
+  
+        <button (click)="login(first.value, second.value)">Login</button><br>
+      </div>
+    </form>
+    
+  
